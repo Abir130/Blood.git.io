@@ -16,66 +16,50 @@
             <!-- Blank Start -->
            <div class="container-fluid pt-4 px-4">
 				<div class="bg-secondary rounded h-100 p-4">
-					<form action="<?php echo base_url()?>update-profile" method="post">
+					<div >
 						<div class="row">
 				<h6 class="mb-4 fw-lighter">My profile</h6>
 				<div class="col-sm-12 col-md-6">
 						<input type="text" class="d-none" name="id" value="<?php echo $admin_data_id->id;?>">
 						<div class="form-floating mb-3">
-							<input type="text" class="form-control" id="floatingName" name="name" value="<?php echo $admin_data_id->name;?>" placeholder="name@example.com">
+							<input disabled type="text" class="form-control" id="floatingName" name="name" value="<?php echo $admin_data_id->name;?>" placeholder="name@example.com">
 							<label for="floatingName">Name</label>
 						</div>
 						<div class="form-floating mb-3">
-							<select class="form-select" name="group_name" id="floatingSelect" aria-label="Floating label select example">
-								<option selected value=""><?php echo $admin_data_id->group_name; ?></option>
-								<option value="AB-">AB-</option>
-								<option value="AB+">AB+</option>
-								<option value="A-">A-</option>
-								<option value="A+">A+</option>
-								<option value="B-">B-</option>
-								<option value="B+">B+</option>
-								<option value="O-">O-</option>
-								<option value="O+">O+</option>
-							</select>
+							<input disabled type="text" class="form-control" id="floatingName" name="name" value="<?php echo $admin_data_id->group_name;?>" placeholder="name@example.com">
+							<label for="floatingName">Blood Group</label>
 						</div>
 						<div class="form-floating mb-3">
-							<select class="form-select" name="type" id="floatingSelect" aria-label="Floating label select example">
-								<option selected value=""><?php echo $admin_data_id->type; ?></option>
-								<option value="Donor">Donor</option>
-								<option value="User">User</option>
-								<option value="volunteer">Volunteer</option>
-							</select>
+							<input disabled type="text" class="form-control" id="floatingName" name="name" value="<?php echo $admin_data_id->type;?>" placeholder="name@example.com">
+							<label for="floatingName">User Type</label>
 						</div>
 					
 				</div>
 				<div class="col-sm-12 col-md-6">
 				
 						<div class="form-floating mb-3">
-							<input type="text" class="form-control" id="floatingCity" value="<?php echo $admin_data_id->city; ?>" name="city" placeholder="City">
+							<input disabled type="text" class="form-control" id="floatingCity" value="<?php echo $admin_data_id->city; ?>" name="city" placeholder="City">
 							<label for="floatingCity">City</label>
 						</div>
 						<div class="form-floating mb-3">
-							<input type="text" class="form-control" id="floatingPhone" value="<?php echo $admin_data_id->phone; ?>" name="phone" placeholder="Phone">
+							<input disabled type="text" class="form-control" id="floatingPhone" value="<?php echo $admin_data_id->phone; ?>" name="phone" placeholder="Phone">
 							<label for="floatingPhone">Phone</label>
 						</div>
 						<div class="form-floating mb-3">
-							<input type="text" class="form-control" id="floatingAge" <?php echo $admin_data_id->age; ?> name="age" placeholder="Age">
+							<input disabled type="text" class="form-control" id="floatingAge" value="<?php echo $admin_data_id->age; ?>" name="age" placeholder="Age">
 							<label for="floatingAge">Age</label>
 						</div>
 					
 				</div>
 
 				 <div class="form-group mb-4 text-end">
-                    <button class="btn btn-primary btn-block" type="submit">Update</button>
+                    <a class="btn btn-primary px-4" href="<?php echo base_url()?>profile-update/<?php echo $admin_data_id->id;?>" type="button">Edit</a>
                 </div>
-					</form>
+				</div>
 				</div>
 			</div>
             	
 		  
-		 
-		 
-		 
 
             </div>
             <!-- Blank End -->

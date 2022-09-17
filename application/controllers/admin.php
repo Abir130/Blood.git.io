@@ -49,16 +49,32 @@ class Admin extends CI_Controller {
 	}
 
 	public function add_member(){
-		$this->load->model('admin_model');
-		$this->admin_model->save_admin_data();
-		redirect('add-user');
+		$phone = $this->input->post('phone',true);
+		if(strlen($phone) == 11){
+			$this->load->model('admin_model');
+			$this->admin_model->add_admin_data($phone);
+			$this->session->set_flashdata('success','Member added successfully ');
+			redirect('add-user');
+		}else{
+			$this->session->set_flashdata('error','Invalid number');
+			redirect('add-user');
+		}
 	}
 
+	
+
 	public function admin_insert(){
-		$_SESSION['message']= "<span class='ancor-color'>SignUp Successfully</span>";
-		$this->load->model('admin_model');
-		$this->admin_model->save_admin_data();
-		redirect('login-page');
+		$phone = $this->input->post('phone',true);
+		if(strlen($phone) == 11){
+			$this->load->model('admin_model');
+			$this->admin_model->save_admin_data($phone);
+			$sdata['message'] = '<span class="ancor-color">SignUp Successfully</span>';
+			$this->session->set_userdata($sdata);
+			redirect('login-page');
+		}else{
+			$this->session->set_flashdata('error','Invalid number');
+			redirect('admin-signup');
+		}
 	}
 
 
@@ -69,10 +85,24 @@ class Admin extends CI_Controller {
 			$this->load->view('template',$data);
 	}
 
+	
+
 	public function update_profile(){
+		$phone = $this->input->post('phone',true);
 		$id = $this->input->post('id',true);
 		$this->load->model('admin_model');
-		$this->admin_model->update_profile($id);
-		redirect('user-list');
+		$this->admin_model->update_profile($id,$phone);
+		redirect('profile-update/'.$id);
 	}
+
+
+
+	public function profile_update_page($id){
+		$this->load->model('admin_model');
+		$data['admin_data_id']=$this->admin_model->admin_data_id($id);
+		$data['view_path'] = 'update-profile';
+		$this->load->view('template',$data);
+	}
+
+	
 }

@@ -84,6 +84,8 @@ $route['add-member'] = 'admin/add_member';
 $route['user-profile/(.+)'] = 'admin/user_profile/$1';
 $route['update-profile'] = 'admin/update_profile';
 $route['about-donation'] = 'dashboard/about_donation';
+$route['edit-user'] = 'admin/edit_profile';
+$route['profile-update/(.+)'] = 'admin/profile_update_page/$1';
 
 
 

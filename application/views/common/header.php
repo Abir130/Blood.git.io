@@ -21,8 +21,8 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="<?php echo base_url();?>assets/vendors/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Js table -->
-    
+    <!-- sweet alert -->
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/vendors/lib/sweetalert/css/sweetalert2.min.css">
 
     <!-- Template Stylesheet -->
     <link href="<?php echo base_url();?>assets/vendors/css/style.css" rel="stylesheet">

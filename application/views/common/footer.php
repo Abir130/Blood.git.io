@@ -13,6 +13,8 @@
     <script src="<?php echo base_url()?>assets/vendors/js/jquery.dataTables.min.js"></script>
     <!-- Template Javascript -->
     <script src="<?php echo base_url()?>assets/vendors/js/main.js"></script>
+    <!-- sweet alert -->
+    <script src="<?php echo base_url();?>assets/vendors/lib/sweetalert/js/sweetalert2.min.js"></script>
 
  <script>
         $(document).ready(function(){
@@ -23,6 +25,7 @@
             });
         });
         });
+        
 </script>
 
 </body>

@@ -196,9 +196,17 @@
                 </div>
                
                 <div class="text-center signup">
-                    Already a member? <a href="<?php echo base_url()?>admin-login" class="text-decoration-none ancor-color">Login</a>
+                    Already a member? <a href="<?php echo base_url()?>" class="text-decoration-none ancor-color">Login</a>
                 </div>
             </form>
             <div class="animation"></div>
         </div>
+
     </div>
+
+
+<?php
+	$this->load->view('common/footer');
+	$this->load->view('sweetalert');
+
+?>

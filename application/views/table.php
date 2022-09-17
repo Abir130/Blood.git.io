@@ -12,10 +12,19 @@
     border: none;
     margin-bottom: 10px;
     }
-   [type="search"] {
+    [type="search"] {
     margin-left: 10px;
     padding: 0 10px;
-}
+    background: black;
+    border: 1px solid #6c7293;
+    color: #ffffff;
+    }
+    select{
+    background: black;
+    border: 1px solid #6c7293;
+    color: #ffffff;
+    }
+
 </style>
 <div class="container-fluid position-relative d-flex p-0">
         <!-- Spinner Start -->
@@ -35,7 +44,7 @@
            <div class="container-fluid pt-4 px-4">
                 <div class="row">
                     <div class="col-12">
-                        <div class="bg-secondary rounded h-100 p-4">
+                        <div class="bg-secondary rounded h-100 p-4  position-relative">
                             <h6 class="mb-4 fw-lighter"><?php echo $table_title;?></h6>
                             <!-- <input id="myInput" type="text" placeholder="Search.."> -->
                             <div class="table-responsive py-3">

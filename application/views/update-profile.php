@@ -1,4 +1,10 @@
-
+<style>
+	.form-control:disabled, .form-control:read-only {
+    background-color: #000000 !important;
+    opacity: 0.6;
+    color: red;
+}
+</style>
 <div class="container-fluid position-relative d-flex p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -16,19 +22,19 @@
             <!-- Blank Start -->
            <div class="container-fluid pt-4 px-4">
 				<div class="bg-secondary rounded h-100 p-4">
-					<form action="<?php echo base_url()?>add-member" method="post">
+                    
+					<form action="<?php echo base_url()?>update-profile" method="post">
 						<div class="row">
-				<h6 class="mb-4 fw-lighter">Add Member</h6>
-	
+				<h6 class="mb-4 fw-lighter">Update Profile</h6>
 				<div class="col-sm-12 col-md-6">
-
+						<input type="text" class="d-none" name="id" value="<?php echo $admin_data_id->id;?>">
 						<div class="form-floating mb-3">
-							<input type="text" class="form-control" id="floatingName" name="name" required placeholder="name">
+							<input type="text" class="form-control" id="floatingName" name="name" value="<?php echo $admin_data_id->name;?>" placeholder="name" required>
 							<label for="floatingName">Name</label>
 						</div>
 						<div class="form-floating mb-3">
 							<select class="form-select" name="group_name" id="floatingSelect" aria-label="Floating label select example" required>
-								<option selected value="">Blood Group</option>
+								<option selected value="<?php echo $admin_data_id->group_name; ?>"><?php echo $admin_data_id->group_name; ?></option>
 								<option value="AB-">AB-</option>
 								<option value="AB+">AB+</option>
 								<option value="A-">A-</option>
@@ -41,7 +47,7 @@
 						</div>
 						<div class="form-floating mb-3">
 							<select class="form-select" name="type" id="floatingSelect" aria-label="Floating label select example" required>
-								<option selected value="">User Type</option>
+								<option selected value="<?php echo $admin_data_id->type; ?>"><?php echo $admin_data_id->type; ?></option>
 								<option value="Donor">Donor</option>
 								<option value="User">User</option>
 								<option value="volunteer">Volunteer</option>
@@ -52,38 +58,35 @@
 				<div class="col-sm-12 col-md-6">
 				
 						<div class="form-floating mb-3">
-							<input type="text" class="form-control" id="floatingCity" name="city" placeholder="City" required>
+							<input type="text" class="form-control" id="floatingCity" value="<?php echo $admin_data_id->city; ?>" name="city" placeholder="City" required>
 							<label for="floatingCity">City</label>
 						</div>
 						<div class="form-floating mb-3">
-							<input type="number" class="form-control" id="floatingPhone" name="phone" placeholder="Phone" required>
+							<input disabled type="text" class="form-control" id="floatingPhone" value="<?php echo $admin_data_id->phone; ?>" name="phone" placeholder="Phone" >
 							<label for="floatingPhone">Phone</label>
-							<span>
-								
-							</span>
 						</div>
 						<div class="form-floating mb-3">
-							<input type="number" class="form-control" id="floatingAge" name="age" placeholder="Age" required>
+							<input type="text" class="form-control" id="floatingAge" value="<?php echo $admin_data_id->age; ?>" name="age" placeholder="Age" required>
 							<label for="floatingAge">Age</label>
 						</div>
 					
 				</div>
 
 				 <div class="form-group mb-4 text-end">
-                    <button class="btn btn-primary btn-block" type="submit">Submit</button>
+					<a href="<?php echo base_url(); ?>user-profile/<?php echo $_SESSION['id'];?>" class="btn btn-info btn-block me-2" type="button">Back</a>
+                    <button class="btn btn-primary btn-block" type="submit">Update</button>
                 </div>
 					</form>
 				</div>
 			</div>
-            	
+
             </div>
             <!-- Blank End -->
 
            <?php $this->load->view('common/footer-bottom') ?>
-
         </div>
         <!-- Content End -->
     </div>
-		
-	
 
+
+			
