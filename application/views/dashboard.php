@@ -15,6 +15,13 @@
             <!-- Blank Start -->
            <div class="container-fluid pt-4 px-4">
                 <div class="row g-4 mb-5">
+                   <div class="col-12">
+                        <div class="bg-secondary rounded p-4">
+                            <marquee onmouseover="this.stop();" onmouseout="this.start();" direction="left" style="width:80%;margin:auto;" scrollamount="5" class="d-block m-auto fs-5 text-success"> <span class="fs-3">"</span> নিজে রক্ত দান করুন অন্যকে রক্তদানে উৎসাহিত করুন <span class="fs-3">"</span><span class="d-inline-block px-5"></span><span class="fs-3">"</span>এখানে আপনি রক্তদাদা হতে পারবেন এবং রক্ত গ্রহীতাও হতে পারবেন।&nbsp;&nbsp;&nbsp;আমাদের সঙ্গে থাকুন শেয়ার করুন।&nbsp;&nbsp;&nbsp;আমরা প্রতিনিয়ত কাজ করে যাচ্ছি।&nbsp;&nbsp;&nbsp;ধন্যবাদ <span class="fs-3">"</span></marquee>
+                        </div>
+                   </div>
+                </div>
+                <div class="row g-4 mb-5">
                     <div class="col-sm-6 col-xl-4">
                         <a href="<?php echo base_url()?>user-list">
                             <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">

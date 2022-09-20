@@ -50,6 +50,17 @@
 	}
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+	font-family: "Open Sans",
+		sans-serif;
+	font-weight: 400;
+}
+
 .login-dark .form-section {
 	max-width: 320px;
 	width: 90%;
@@ -228,6 +239,18 @@ tr:nth-child(even) {
 	100% {
 		transform: scale(1);
 	}
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
 }
 
 @media(max-width:570px) {

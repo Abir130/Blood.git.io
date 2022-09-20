@@ -144,6 +144,8 @@
 .title {
     font-size: 26px;
 }
+
+
 </style>
     <div class="login-dark ">
       
@@ -182,10 +184,10 @@
 							<input class="form-control mb-3" required type="text" name="city" placeholder="City">
 						</div>
 						<div class="form-group">
-							<input class="form-control mb-3" required type="text" name="phone" placeholder="Phone">
+							<input class="form-control mb-3" required type="number" name="phone" placeholder="Phone">
 						</div>
 						<div class="form-group">
-							<input class="form-control mb-3" required type="text" name="age" placeholder="Age">
+							<input class="form-control mb-3" required type="number" name="age" placeholder="Age">
 						</div>
 					</div>
 				</div>
