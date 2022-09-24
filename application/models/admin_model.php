@@ -25,7 +25,7 @@ class Admin_model extends CI_Model {
 			$data['city']=$this->input->post('city',true);
 			$data['district']=$this->input->post('district',true);
 			$data['gender']=$this->input->post('gender',true);
-			$data['type']=$this->input->post('type',true);
+			$data['street']=$this->input->post('street',true);
 			$data['phone']=$this->input->post('phone',true);
 			$this->db->insert('tbl_blood',$data);
 			}
