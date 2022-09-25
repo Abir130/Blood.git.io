@@ -395,4 +395,14 @@ input[type=number] {
 			padding-right: 15px !important;
 		}
 	}
+
+	@media(max-width:428px) {
+		.j-b-m {
+			justify-content: space-between;
+		}
+
+		.text-m-end {
+			text-align: end;
+		}
+	}
 }

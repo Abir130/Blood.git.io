@@ -104,7 +104,7 @@
                                                      echo "";
                                                    }
                                                    else{
-                                                    if($row->status == 'available'){
+                                                    if($row->status == 'Available'){
                                                         echo "<span class='bg-success p-1 px-2 rounded fs-10'>$row->status</span>";
                                                     }else{
                                                         echo "<span class='bg-gray p-1 px-2 rounded fs-10'>$row->status</span>";

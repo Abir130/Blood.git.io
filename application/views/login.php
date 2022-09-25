@@ -11,12 +11,12 @@
 	color: #16c199;
 }
 .login-dark {
-	/* background: linear-gradient(45deg, #17064e, #440000); */
-	background: url('<?php echo base_url(); ?>assets/img/star-animation.gif');
+	background: linear-gradient(45deg, #17064e, #440000);
+	/* background: url('<?php echo base_url(); ?>assets/img/star-animation.gif'); */
 	height: 100vh;
 	position: relative;
 }
-.login-dark:before {
+/* .login-dark:before {
     content: "";
     position: absolute;
     top: 0;
@@ -25,7 +25,7 @@
     height: 100%;
     background: linear-gradient(45deg, #6a0c0c4d,#00444e85);
     filter: blur(20px);
-}
+} */
 .animation {
 	position: absolute;
 	content: "";

@@ -6,6 +6,9 @@ class Admin_login extends CI_Model {
 	{
 		$this->db->select('*');
         $this->db->from('tbl_blood');
+        if($this->db->where('type','volunteer')){
+            $_SESSION['admin']= true;
+        }
         $this->db->where('phone',$phone);
         $query_result=$this->db->get();
         $result=$query_result->row();

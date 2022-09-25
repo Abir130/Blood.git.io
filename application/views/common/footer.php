@@ -11,6 +11,8 @@
     <script src="<?php echo base_url()?>assets/vendors/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Js table -->
     <script src="<?php echo base_url()?>assets/vendors/js/jquery.dataTables.min.js"></script>
+     <!-- Js table -->
+    <script src="<?php echo base_url()?>assets/vendors/js/cascading.js"></script>
      <!-- Js ripple -->
     <script src="<?php echo base_url()?>assets/vendors/js/ripples.js"></script>
     <!-- Template Javascript -->

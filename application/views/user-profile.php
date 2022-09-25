@@ -21,45 +21,46 @@
 						<div class="row flex-direction-reverse">
 							<div class="col-md-6 ">
 								<input type="text" class="d-none" name="id" value="<?php echo $admin_data_id->id;?>">
-								<div class="d-flex bg-dark px-3 py-3 mb-2 rounded ">
+								<div class="d-flex j-b-m  bg-dark px-3 py-3 mb-2 rounded ">
 									<div style="width:150px;" class="me-3 text-asmani">Name :</div>
 									<div><?php echo $admin_data_id->name;?></div>
 								</div>
-								<div class="d-flex bg-dark px-3 py-3 mb-2 rounded ">
+								<div class="d-flex bg-dark j-b-m  px-3 py-3 mb-2 rounded ">
 									<div style="width:150px;" class="me-3 text-asmani">Age :</div>
-									<div><?php echo $admin_data_id->age;?></div>
+									<div class="text-m-end"><?php echo $admin_data_id->age;?></div>
 								</div>
-								<div class="d-flex bg-dark px-3 py-3 mb-2 rounded ">
+								<div class="d-flex bg-dark j-b-m  px-3 py-3 mb-2 rounded ">
 									<div style="width:150px;" class="me-3 text-asmani">Gender :</div>
-									<div><?php echo $admin_data_id->gender;?></div>
+									<div class="text-m-end"><?php echo $admin_data_id->gender;?></div>
 								</div>
-								<div class="d-flex bg-dark px-3 py-3 mb-2 rounded ">
+								<div class="d-flex bg-dark j-b-m  px-3 py-3 mb-2 rounded ">
 									<div style="width:150px;" class="me-3 text-asmani">Blood Group :</div>
-									<div><?php echo $admin_data_id->group_name;?></div>
+									<div class="text-m-end"><?php echo $admin_data_id->group_name;?></div>
 								</div>
-								<div class="d-flex bg-dark px-3 py-3 mb-2 rounded ">
+								<div class="d-flex bg-dark j-b-m  px-3 py-3 mb-2 rounded ">
 									<div style="width:150px;" class="me-3 text-asmani">User Type :</div>
-									<div><?php echo $admin_data_id->type;?></div>
+									<div class="text-m-end"><?php echo $admin_data_id->type;?></div>
 								</div>
-								<div class="d-flex bg-dark px-3 py-3 mb-2 rounded ">
+								<div class="d-flex bg-dark j-b-m  px-3 py-3 mb-2 rounded ">
 									<div style="width:150px;" class="me-3 text-asmani">City :</div>
-									<div><?php echo $admin_data_id->city;?></div>
+									<div class="text-m-end"><?php echo $admin_data_id->city;?></div>
 								</div>
-								<div class="d-flex bg-dark px-3 py-3 mb-2 rounded ">
+								<div class="d-flex bg-dark j-b-m  px-3 py-3 mb-2 rounded ">
 									<div style="width:150px;" class="me-3 text-asmani">District :</div>
-									<div><?php echo $admin_data_id->district;?></div>
+									<div class="text-m-end"><?php echo $admin_data_id->district;?></div>
 								</div>
-								<div class="d-flex bg-dark px-3 py-3 mb-2 rounded ">
+								<div class="d-flex bg-dark j-b-m  px-3 py-3 mb-2 rounded ">
 									<div style="width:150px;" class="me-3 text-asmani">Address :</div>
-									<div><?php echo $admin_data_id->street;?></div>
+									<div class="text-m-end"><?php echo $admin_data_id->street;?></div>
 								</div>
-								<div class="d-flex bg-dark px-3 py-3 mb-2 rounded ">
+								<div class="d-flex bg-dark j-b-m  px-3 py-3 mb-2 rounded ">
 									<div style="width:150px;" class="me-3 text-asmani">Phone :</div>
-									<div><?php echo $admin_data_id->phone;?></div>
+									<div class="text-m-end"><?php echo $admin_data_id->phone;?></div>
 								</div>
-								<div class="d-flex bg-dark px-3 py-3 mb-2 rounded ">
+								<div class="d-flex bg-dark j-b-m  px-3 py-3 mb-2 rounded ">
 									<div style="width:150px;" class="me-3 text-asmani">Status :</div>
-									<div>
+									<div class="text-m-end">
+										<div>
 										<?php
 											if( $admin_data_id->status == null){
 												echo "";
@@ -72,7 +73,12 @@
 											}
 											}
 										?>
+										<div class="fs-10 mt-1">
+											You can change your status at any time
+										</div>
 									</div>
+									</div>
+									
 								</div>
 							
 							</div>
