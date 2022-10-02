@@ -1,0 +1,6 @@
+User-Agent: *
+Allow:
+Disallow:/user-list
+Disallow:/donor-list
+Disallow:/donor-profile
+Disallow:/user-profile
